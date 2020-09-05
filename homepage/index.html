@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Simple Website</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="header__form">
+        <input type="text" placeholder="Search" />
+        <!-- Search Icon -->
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd"
+            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
+          <path fill-rule="evenodd"
+            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+        </svg>
+      </div>
+      <div class="header__logo">
+        <img src="https://citylimits.org/wp-content/uploads/2014/10/city-limits-color-srgb-336x78.png" alt="Logo" />
+      </div>
+      <div class="header__buttons">
+        <button class="header__newsLetterBtn">NewsLetter</button>
+        <button class="header__donateBtn">Donate</button>
+      </div>
+    </div>
+    
+    <div class="underline"></div>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navbar__top">
+        <ul>
+          <li><a href="#">Topics</a></li>
+          <li><a href="#">The Coronavirus Crisis</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Become A Member</a></li>
+          <li><a href="#">Get Involved</a></li>
+        </ul>
+      </div>
+      <div class="navbar__bottom">
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/mapping-the-future-140x140.jpg"
+                alt="" />
+              <span>Mapping The Future</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/citylimits-en-espanol-140x140.jpg"
+                alt="" />
+              <span>Una Ciudad sin Límites</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/voices-of-NY-140x140.jpg" />
+              <span>Voices Of New York</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/clarify-140x140.jpg" alt="" />
+              <span>CLARIFY Training Program</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="navbar__mobile container-fluid row d-none">
+      <div class="navbar__mobileOptions" data-mobileOptions>
+        <div class="navbar__cross" data-cross>
+          <i class="far fa-times-circle"></i>
+        </div>
+        <ul>
+          <li>
+            <input type="text" placeholder="Search" />
+          </li>
+          <li><a href="">News</a></li>
+          <li><a href="">Investigation</a></li>
+          <li><a href="">Age Justice</a></li>
+          <li><a href="">Climate Change</a></li>
+          <li><a href="">The Ride</a></li>
+          <li><a href="">Opinion</a></li>
+          <li><a href="">Podcasts</a></li>
+          <li><a href="">Elections</a></li>
+          <!--  -->
+          <li><a href="">The Coronavirus Crisis</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Opinion</a></li>
+          <!--  -->
+        </ul>
+      </div>
+      <div class="navbar__menu" data-menu>
+        <a href="#">
+          <div>
+            <i class="fas fa-bars menu"></i>
+            <div class="text">Menu</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="banner">
+      <!-- Main Post -->
+      <div class="banner__mainPosts card ">
+        <img
+          src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/09/school-deal-771x515.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <a href="#" class="button--link">Coronavirus</a>
+          <h1 class="card-title">
+            Delayed School Start Doesn’t Resolve Worries About Disparities
+          </h1>
+
+          <p class="card-text">
+            From school to school and district to district, differing infection
+            rates and resource levels will make for disparate experiences this
+            fall.
+          </p>
+          <div class="card-author">
+            By <span class="author">JEANMARIE EVELLY</span>
+          </div>
+        </div>
+      </div>
+      <!-- SidePosts -->
+      <div class="banner__sidePosts">
+        <div class="banner__sidePost card">
+          <div class="card-body">
+            <a href="#" class="button--link">Economia</a>
+            <div class="row">
+              <div class="author-title col-md-8">
+                <div class="title">
+                  <p>Empleada de lavandería en disputa con su empleador</p>
+                </div>
+                <div class="card-author">
+                  By <span class="author">JEANMARIE EVELLY</span>
+                </div>
+              </div>
+
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/09/workers-140x140.jpg"
+                class=" col-md-4"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="banner__sidePost card">
+          <div class="card-body">
+            <a href="#" class="button--link">Mapping The Future</a>
+            <div class="row">
+              <div class="author-title col-md-8">
+                <div class="title">
+                  <p>
+                    Debate in Gowanus About Whether to Pause or Push Rezoning
+                  </p>
+                </div>
+                <div class="card-author">
+                  By <span class="author">SADEF ALI KULLY </span>
+                </div>
+              </div>
+
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/09/workers-140x140.jpg"
+                class="col-md-4"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- News -->
+    <h1 class="text-center">News</h1>
+    <div class="news">
+      <div class="news__mainNews">
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/08/polish-schools.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="button--link">VOICES OF NEW YORK</div>
+            <h2 class="card-title">
+              Asians in Sunset Park Call City Speaker To Support Industry City
+              Rezoning
+            </h2>
+            <p class="card-text">
+              For the 10,000 students attending Polish Language Schools on the
+              East Coast, remote learning in the Spring meant renewed
+              connections to Poland. What lies ahead is uncertain.
+            </p>
+            <div class="card-author">By <span>DANIEL PARRA</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="news__secondaryNews">
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/08/unemployment-771x444.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="button--link">UNA CIUDAD SIN LÍMITES</div>
+            <p class="card-text">
+              Los trabajadores hispanos y afroamericanos enfrentan las mayores
+              pérdidas de empleo a lo largo de la pandemia
+            </p>
+            <div class="card-author">By <span>DANIEL PARRA</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2017/09/161206_Ferry-Alternate-771x514.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="button--link">2020 ELECTIONS</div>
+            <p class="card-text">
+              Another Court Win for City Hall Against Critics of Development
+              Schemes
+            </p>
+            <div class="card-author">By <span>DANIEL PARRA</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/08/whatcom-country-drop-box-locations.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="button--link">VOICES OF NEW YORK</div>
+            <p class="card-text">
+              Does NYC Need Drop-Boxes to Survive Election 2020?
+            </p>
+            <div class="card-author">By <span>DANIEL PARRA</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/05/Inwood-19-771x514-771x514.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="button--link">VOICES OF NEW YORK</div>
+            <p class="card-text">
+              Inwood Groups Want State’s Highest Court to Hear Rezoning Dispute
+            </p>
+            <div class="card-author">By <span>DANIEL PARRA</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mapping the future -->
+    <h1 class="text-center">Mapping The Future</h1>
+    <div class="news">
+      <div class="news__mainNews">
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/08/IC-1-771x514.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h2 class="card-title">
+              Asians in Sunset Park Call City Speaker To Support Industry City
+              Rezoning
+            </h2>
+            <p class="card-text">
+              The project has been controversial from the beginning. But some
+              think it would boost the local economy and create 20,000 jobs for
+              residents.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="news__secondaryNews">
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/08/adams.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Which Neighborhoods Could Be Hit Hardest By City Lien Sales?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/08/Industry-City-771x514.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              City Planning Commission Approves Controversial Industry City
+              Rezoning Plan
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2018/01/IMG_1579-771x578.jpg"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Does NYC Need Drop-Boxes to Survive Election 2020?
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2015/10/20151024IndustryCityTalwarWeb2000X1333-3134-771x514.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Opinion: Industry City Tycoons are Exploiting Pandemic to Advance
+              Rezoning
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- City Limit NewsPaper -->
+    <div class="newspaper">
+      <h1 class="text-center">City Limit Newsletters</h1>
+      <p class="text-center">
+        Sign up for our newsletters to get our reporting delivered to you.
+      </p>
+      <div class="newspaper__form">
+        <!-- 3 -->
+        <div class="newspaper__checkboxes">
+          <p>
+            Sign up for our newsletters to get our reporting delivered to you.
+          </p>
+          <!-- 2 -->
+          <form class="newspaper__checkbox__form">
+            <div class="newspaper__checkbox">
+              <input type="checkbox" name="" id="" />
+              <div class="newspaper__checkboxInfo">
+                <h3>The Weekly</h3>
+                <p>
+                  Never miss a probing investigative report, thought-provoking
+                  op-ed or news making podcast
+                </p>
+              </div>
+            </div>
+            <div class="newspaper__checkbox">
+              <input type="checkbox" name="" id="" />
+              <div class="newspaper__checkboxInfo">
+                <h3>Mapping the Future</h3>
+                <p>
+                  City Limits' Housing and Development Bulletin. News and Tools
+                  for New Yorkers to Navigate the Housing Crunch
+                </p>
+              </div>
+            </div>
+            <div class="newspaper__checkbox">
+              <input type="checkbox" name="" id="" />
+              <div class="newspaper__checkboxInfo">
+                <h3>Voices of New York</h3>
+                <p>Spotlighting community reporting across the city</p>
+              </div>
+            </div>
+            <div class="newspaper__checkbox">
+              <input type="checkbox" name="" id="" />
+              <div class="newspaper__checkboxInfo">
+                <h3>Una Ciudad sin Limites (City Without Limits)</h3>
+                <p>Informes detallados en español</p>
+              </div>
+            </div>
+            <div class="newspaper__checkbox">
+              <input type="checkbox" name="" id="" />
+              <div class="newspaper__checkboxInfo">
+                <h3>CityVote 2020</h3>
+                <p>Your guide to the 2020 vote in NYC</p>
+              </div>
+            </div>
+          </form>
+          <!-- 2 -->
+        </div>
+        <!-- /3 -->
+        <!-- 1 -->
+        <div class="newspaper__mainForm">
+          <form>
+            <div class="newspaper__inputBox">
+              <div>First Name</div>
+              <input type="text" placeholder="First Name" />
+            </div>
+            <div class="newspaper__inputBox">
+              <div>Email address</div>
+              <input type="email" placeholder="Email address" />
+            </div>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+        <!-- 1 -->
+      </div>
+    </div>
+    <!-- Podcasts -->
+
+    <div class="podcasts">
+      <h1 class="title text-center">Podcasts</h1>
+      <div class="podcasts__container row">
+        <!-- Podcast 1 -->
+        <div class="podcast col-12 col-md-4">
+          <!-- <div class="podcast__encircle">►</div> -->
+          <i class="far fa-play-circle"></i>
+          <h3 class="podcast__title">
+            The True Lessons the 1970s Fiscal Crisis Offers Pandemic NYC
+          </h3>
+          <div class="podcast__description">
+            The crisis is held up as a morality tale about the limits of
+            democracy and progressive government—lessons that some would apply
+            to our current, pandemic-driven emergency.
+          </div>
+          <div class="podcast__author">By <span>JARRETT MURPHY</span></div>
+        </div>
+
+        <!-- Podcast 2 -->
+        <div class="podcast col-12 col-md-4">
+          <!-- <div class="podcast__encircle">►</div> -->
+          <i class="far fa-play-circle"></i>
+          <h3 class="podcast__title">
+            What’s Next in the Queens BP Race & Lessons from the 2020 Primaries
+          </h3>
+          <div class="podcast__description">
+            Councilmember Donovan Richards, the likely next Queens Borough
+            President, talks about his plans for the office, while political
+            expert Christina Greer discusses the lessons New York can take from
+            June’s primary election.
+          </div>
+          <div class="podcast__author">By <span>JEANMARIE EVELLY</span></div>
+        </div>
+
+        <!-- Podcast 3 -->
+        <div class="podcast col-12 col-md-4">
+          <!-- <div class="podcast__encircle">►</div> -->
+          <i class="far fa-play-circle"></i>
+          <h3 class="podcast__title">
+            Brooklyn Reps on How NY Should Handle School Reopenings, COVID-19,
+            Rent Crisis
+          </h3>
+          <div class="podcast__description">
+            Brooklyn State Sen. Julia Salazar and Jabari Brisport — who won the
+            democratic primary in June and is likely to secure a State Senate
+            seat in the upcoming general election — discuss ways the city and
+            state can address school safety, potential evictions and other
+            pandemic-related issues.
+          </div>
+          <div class="podcast__author">By <span>JEANMARIE EVELLY</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Special Projects -->
+
+    <div class="special-projects">
+      <h2 class="title text-center pb-5">Special Projects</h2>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="card col-12 col-lg-4">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/city-on-edge.jpg"
+            alt=""
+            class="card-img"
+          />
+          <h3 class="card-title">
+            City on the Edge: Climate Change and New York
+          </h3>
+          <div class="card-body">
+            <div class="chunck chunk1">
+              <h4 class="chunck-title">
+                Opinion: After Feds’ Failure, NYS Must Crack Down on Air
+                Pollution
+              </h4>
+              <p class="chunck-content">
+                'Recent research shows that long-term exposure to
+                particulate-matter air pollution increases the likelihood of
+                severe COVID-19 outcomes. And people of color are
+                disproportionately affected.'
+              </p>
+            </div>
+            <div class="chunck chunk2">
+              <h4 class="chunck-title">
+                New York’s Hydropower Plan Stirs Concerns Over Impact on
+                Waterways
+              </h4>
+              <p class="chunck-content">
+                But NYC needs power to replace Indian Point's nuclear energy
+                without resorting to new fossil-fuel usage.
+              </p>
+            </div>
+            <div class="chunck chunk3">
+              <h4 class="chunck-title">
+                ‘Restore Mother Nature’ Bond Act Won’t Be on This Year’s Ballot
+              </h4>
+              <p class="chunck-content">
+                If passed by voters, it would have provided funding for
+                flood-mitigation work, efforts to restore fish and wildlife
+                habitats and projects to assist communities impacted by
+                environmental injustice.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card col-12 col-lg-4">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/city-on-edge.jpg"
+            alt=""
+            class="card-img"
+          />
+          <h4 class="card-title">
+            City on the Edge: Climate Change and New York
+          </h4>
+          <div class="card-body">
+            <div class="chunck chunk1">
+              <h4 class="chunck-title">
+                Opinion: After Feds’ Failure, NYS Must Crack Down on Air
+                Pollution
+              </h4>
+              <p class="chunck-content">
+                'Recent research shows that long-term exposure to
+                particulate-matter air pollution increases the likelihood of
+                severe COVID-19 outcomes. And people of color are
+                disproportionately affected.'
+              </p>
+            </div>
+            <div class="chunck chunk2">
+              <h4 class="chunck-title">
+                New York’s Hydropower Plan Stirs Concerns Over Impact on
+                Waterways
+              </h4>
+              <p class="chunck-content">
+                But NYC needs power to replace Indian Point's nuclear energy
+                without resorting to new fossil-fuel usage.
+              </p>
+            </div>
+            <div class="chunck chunk3">
+              <h4 class="chunck-title">
+                ‘Restore Mother Nature’ Bond Act Won’t Be on This Year’s Ballot
+              </h4>
+              <p class="chunck-content">
+                If passed by voters, it would have provided funding for
+                flood-mitigation work, efforts to restore fish and wildlife
+                habitats and projects to assist communities impacted by
+                environmental injustice.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card col-12 col-lg-4">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/city-on-edge.jpg"
+            alt=""
+            class="card-img"
+          />
+          <h3 class="card-title">
+            City on the Edge: Climate Change and New York
+          </h3>
+          <div class="card-body">
+            <div class="chunck chunk1">
+              <h4 class="chunck-title">
+                Opinion: After Feds’ Failure, NYS Must Crack Down on Air
+                Pollution
+              </h4>
+              <p class="chunck-content">
+                'Recent research shows that long-term exposure to
+                particulate-matter air pollution increases the likelihood of
+                severe COVID-19 outcomes. And people of color are
+                disproportionately affected.'
+              </p>
+            </div>
+            <div class="chunck chunk2">
+              <h4 class="chunck-title">
+                New York’s Hydropower Plan Stirs Concerns Over Impact on
+                Waterways
+              </h4>
+              <p class="chunck-content">
+                But NYC needs power to replace Indian Point's nuclear energy
+                without resorting to new fossil-fuel usage.
+              </p>
+            </div>
+            <div class="chunck chunk3">
+              <h4 class="chunck-title">
+                ‘Restore Mother Nature’ Bond Act Won’t Be on This Year’s Ballot
+              </h4>
+              <p class="chunck-content">
+                If passed by voters, it would have provided funding for
+                flood-mitigation work, efforts to restore fish and wildlife
+                habitats and projects to assist communities impacted by
+                environmental injustice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Donation -->
+
+    <div class="donation">
+      <h3 class="donation__title text-center">Support City Limits</h3>
+      <p class="donation__content">
+        Support local, investigative journalism that has informed and empowered
+        New Yorkers for over forty years.
+      </p>
+      <form class="donation__form">
+        <div class="donation__inputs">
+          <div class="donation__input">
+            <span>$</span>
+            <input type="text" />
+          </div>
+          <select>
+            <option value="Monthly">Monthly</option>
+            <option value="Yearly">Yearly</option>
+            <option value="Once">Once</option>
+          </select>
+        </div>
+        <button type="submit">Donate</button>
+      </form>
+    </div>
+
+    <!-- Investigations -->
+    <h1 class="text-center">Investigations</h1>
+    <div class="news">
+      <div class="news__mainNews">
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/08/20200728CityLimitsCarTheft-8359Web1920X1080-771x619.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="button--link">car theft</div>
+            <h2 class="card-title">
+              NYC’s Rise in Auto Thefts Puzzles Experts
+            </h2>
+            <p class="card-text">
+              Since the beginning of the year, rates of reported car thefts in
+              New York City have climbed by 60 percent—the biggest increase of
+              any of the seven major felonies tracked by the NYPD
+            </p>
+            <div class="card-author">By <span>HOLLY DEMUTH</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="news__secondaryNews">
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/06/4753503463_41df27b49e_c-771x514.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="button--link">consumer fireworks</div>
+            <p class="card-text">
+              In State Where NYC’s Illegal Fireworks Can Be Bought, Some Want
+              Tighter Laws
+            </p>
+            <div class="card-author">By <span>Jarrett Murphy</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/06/200613CityLimitsBudgetNYPD-6556Web1920X1280-771x514.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="button--link">Budget</div>
+            <p class="card-text">
+              Cutting the Police Budget Means Revising the Role Cops Play in
+              Today’s NYC
+            </p>
+            <div class="card-author">By <span>Holly DeMuth</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="hhttps://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/06/38419774220_cea637b748_c-771x519.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="button--link">2020 election</div>
+            <p class="card-text">
+              In Run for Congress, Díaz Sr.’s Strategy is to Give Out Food and
+              Skip Debates
+            </p>
+            <div class="card-author">By <span>Daniel Parra</span></div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/06/49964169048_f5d1f178f7_c-771x515.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="button--link">Community Boards</div>
+            <p class="card-text">
+              How Widespread Was Violence on New York’s Nights of Unrest?
+            </p>
+            <div class="card-author">
+              By <span>JEANMARIE EVELLY</span> , <span>HOLLY DEMUTH</span>,
+              <span>DANIELLE CRUZ</span> , <span>NICOLE JAVORSKY</span>,
+              <span>SADEF ALI KULLY</span> , <span>JARRETT MURPHY</span>,and
+              <span>DANIEL PARRA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer container-fluid m-auto p-5">
+      <div class="footer__top row">
+        <div class="footer__content col-lg-5 mb-5">
+          <h5 class="footer__heading w-75">
+            City Limits uses investigative journalism through the prism of New
+            York City to identify urban problems, examine their causes, explore
+            solutions, and equip communities to take action.
+          </h5>
+          <p class="footer__paragraph w-75">
+            Founded in 1976 in the midst of New York’s fiscal crisis, City
+            Limits exists to inform democracy and equip citizens to create a
+            more just city. The organization is a 501(c)(3) nonprofit funded by
+            foundation support, ad sponsorship and donations from readers.
+          </p>
+        </div>
+        <div class="footer__links col-lg-7 row">
+          <ul class="footer__links1 col-lg-6">
+            <li><i class="fas fa-play"></i><a href="#">About Us</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Donate</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Impact</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Supporters</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Supporters</a></li>
+          </ul>
+          <ul class="footer__links2 col-lg-6">
+            <li><i class="fas fa-play"></i><a href="#">Advertise</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Become A Member</a></li>
+            <li>
+              <i class="fas fa-play"></i><a href="#">Content Sharing Policy</a>
+            </li>
+            <li><i class="fas fa-play"></i><a href="#">Privacy Policy</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Standards</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer__bottom row">
+        <div class="footer__copyright col-md-8">
+          © Copyright 2020, City Limits
+        </div>
+        <div class="footer__socialMedias col-md-4 mt-3 mt-md-0">
+          <ul class="footer__socialLinks row">
+            <li class="col-2">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JQuery  -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>

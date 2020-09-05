@@ -1,0 +1,401 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primaryButton-color: #d41313;
+}
+
+.root {
+    width: 80vw;
+    max-width: 2000px;
+    margin: auto;
+}
+@media ( max-width: 1160px) {
+    .root {
+        width: 90vw;
+    }
+}
+
+/* Header */
+
+.header__logoContainer {
+    height: 200px;
+    padding: 40px;
+    padding-left: 0;
+    
+}
+
+.header__logo {
+    height: 100%;   
+}
+
+.header__container {
+    display: flex;
+    align-items: baseline;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+}
+
+.header__left > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header__left li {
+    margin: 0;
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header__left li:hover {
+    color: var(--primaryButton-color);
+}
+
+.header__right {
+     display: flex;
+     align-items: center;
+     font-size: 20px;
+}
+
+.header__right > div {
+    cursor: pointer;
+    transition: all .5s ;
+}
+
+.header__right>div:hover i{
+    color :rgb(50, 202, 50);
+}
+
+.header__right>div:first-child {
+    margin-right: 40px;
+}
+
+.header__right>div > i {
+    margin-right: 15px;
+}
+
+.header__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 5px 2px rgb(206, 206, 206);
+    display: none;
+}
+
+.header__mobile .fa-bars {
+    margin-right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.header__mobile .fa-bars:hover {
+    color :rgb(50, 202, 50);
+}
+
+.header__mobile .header__right {
+    margin-right: 20px;
+}
+
+.header__mobile .header__right > i {
+    color: gray;
+    cursor: pointer;
+}
+
+.header__mobile .header__right > i:first-child {
+    margin-right: 30px;
+}
+
+.header__mobile .header__right > i:hover {
+    color: rgb(50, 202, 50);
+}
+
+.header__mobile img {
+    width: 200px;
+}
+
+@media (max-width: 1160px) {
+    .header {
+        display: none;
+    }
+
+    .header__mobile {
+        display: flex;
+    }
+
+}
+
+
+/* Search */
+
+.search {
+    display: flex;
+    margin: 40px 0;
+    border: 1px solid transparent;
+    padding: 0 0px 50px 0px;
+    border-bottom-color: #ccc;
+
+}
+.search > div {
+    flex: 1;
+    border: 3px solid #ccc;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    
+}
+
+.search i {
+    margin-left: 20px;
+    font-size: 22px;
+    margin-right: 10px;
+    color:#ccc;
+}
+
+.search input, .search select {
+    border: none;
+    outline: none;
+    font-size: 22px;
+    width: 100%;
+    color:black;
+}
+
+
+
+
+.search select {
+    margin-right: 10px;
+    cursor: pointer;
+    padding-right: 30px;
+}
+.search>div:nth-child(2) {
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+}
+
+.search button {
+    min-width: 150px;
+    background: #f61212;
+    color: white;
+    font-size: 22px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+
+@media (max-width: 1160px) {
+    .search{
+        margin-top: 140px;
+    }
+
+    .search {
+        flex-direction: column;
+    }
+    .search > div {
+        padding: 20px;
+        margin: 10px 0;
+    }
+
+    .search input {
+        padding-left: 15px;
+    }
+    .search > div:nth-child(2) {
+        border: 3px solid #ccc;
+    }
+
+    .search button {
+        margin-top: 10px;
+        padding: 20px;
+    }
+}
+
+
+/* Main Content */
+
+.main__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'left left right'
+    ;
+    gap: 25px;
+}
+
+.content__left {
+    padding: 30px;
+    border: 1px solid rgb(219, 212, 212);
+    grid-area: left;
+}
+
+.content__right {
+    grid-area: right;
+}
+
+
+.main__content .left__title {
+    font-size: 25px;
+}
+
+
+.chunks {
+    margin: 20px 0;
+}
+
+.chunk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 10px;
+    margin: 0 10px;
+    border-bottom: 1px solid rgb(211, 193, 193);
+}
+
+.chunk__left {
+    display: flex;
+}
+
+.chunk__left .chunk__content {
+    margin-left: 15px;
+}
+
+.chunk__title {
+    cursor: pointer;
+    color: var(--primaryButton-color);
+    transition: .3s;
+}
+
+.chunk__title:hover {
+    text-decoration: underline;
+}
+
+.chunk__right {
+    font-size: 20px;
+    color: gray;
+    font-weight: 550;
+
+}
+
+.content__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__right > button, .signUp__form > button {
+    min-width: 150px;
+    background: #f61212;
+    color: white;
+    font-size: 22px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.job__board, .signUp__form {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+.job__title, .signUp__title, .categories__title {
+    font-size: 25px;
+    font-weight: 650;
+    margin-bottom: 10px;
+}
+
+.post {
+    margin: 10px 0;
+}
+.post>span:first-child {
+    font-size: 22px;
+    font-weight: 550;
+}
+
+.post > span:nth-child(2), .jobPost__info {
+    font-size: 22px;
+}
+
+.signUp__form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.signUp__form > * {
+    margin: 10px 0;
+}
+
+.signUp__form > input {
+
+    font-size: 22px;
+    padding-left: 25px;
+    border: 1px solid #ddd;
+
+}
+
+.signUp__form> input:focus {
+    box-shadow: 0 0 5px 1px rgb(152, 200, 219);
+}
+
+.signUp__form > input, .signUp__form > button {
+    height: 50px;
+    outline: none;
+}
+
+.category {
+    margin: 20px 0;
+    font-size: 22px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    color: var(--primaryButton-color);
+}
+.category:hover {
+    text-decoration: underline;
+}
+@media (max-width: 1160px) {
+    .main__content {
+        grid-template-areas: 
+        'left left left'
+        'right right right'
+        ;
+    }
+
+    .chunk__imgContainer {
+        display: none;
+    }
+
+    .content__right > button {
+        margin: 50px 0;
+    }
+}
+
+.footer {
+    letter-spacing: 1px ;
+}
+
+.footer p {
+    font-size: 18px;
+}

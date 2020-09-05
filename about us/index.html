@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <title>About US Page</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="header__form">
+        <input type="text" placeholder="Search" />
+        <!-- Search Icon -->
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          class="bi bi-search"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+          />
+        </svg>
+      </div>
+      <div class="header__logo">
+        <img
+          src="https://citylimits.org/wp-content/uploads/2014/10/city-limits-color-srgb-336x78.png"
+          alt="Logo"
+        />
+      </div>
+      <div class="header__buttons">
+        <button class="header__newsLetterBtn">NewsLetter</button>
+        <button class="header__donateBtn">Donate</button>
+      </div>
+    </div>
+
+    <div class="underline"></div>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navbar__top">
+        <ul>
+          <li><a href="#">Topics</a></li>
+          <li><a href="#">The Coronavirus Crisis</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Become A Member</a></li>
+          <li><a href="#">Get Involved</a></li>
+        </ul>
+      </div>
+      <div class="navbar__bottom">
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/mapping-the-future-140x140.jpg"
+                alt=""
+              />
+              <span>Mapping The Future</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/citylimits-en-espanol-140x140.jpg"
+                alt=""
+              />
+              <span>Una Ciudad sin Límites</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/voices-of-NY-140x140.jpg"
+              />
+              <span>Voices Of New York</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/clarify-140x140.jpg"
+                alt=""
+              />
+              <span>CLARIFY Training Program</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Navbar Mobile -->
+    <div class="navbar__mobile container-fluid row d-none">
+      <div class="navbar__mobileOptions" data-mobileOptions>
+        <div class="navbar__cross" data-cross>
+          <i class="far fa-times-circle"></i>
+        </div>
+        <ul>
+          <li>
+            <input type="text" placeholder="Search" />
+          </li>
+          <li><a href="">News</a></li>
+          <li><a href="">Investigation</a></li>
+          <li><a href="">Age Justice</a></li>
+          <li><a href="">Climate Change</a></li>
+          <li><a href="">The Ride</a></li>
+          <li><a href="">Opinion</a></li>
+          <li><a href="">Podcasts</a></li>
+          <li><a href="">Elections</a></li>
+          <!--  -->
+          <li><a href="">The Coronavirus Crisis</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Opinion</a></li>
+          <!--  -->
+        </ul>
+      </div>
+      <div class="navbar__menu" data-menu>
+        <a href="#">
+          <div>
+            <i class="fas fa-bars menu"></i>
+            <div class="text">Menu</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="aboutUs__content">
+      <h3 class="content__title">Our Mission and History</h3>
+      <h4 class="content__subTitle">
+        City Limits uses investigative journalism through the prism of New York
+        City to identify urban problems, examine their causes, explore
+        solutions, and equip communities to take action.
+      </h4>
+
+      <p class="content__paragraph">
+        Founded in 1976 in the midst of New York’s fiscal crisis, City Limits
+        exists to inform democracy and empower citizens to create a more just
+        city. The organization is a 501(c)(3) nonprofit funded by foundation
+        support, ad sponsorship and donations from readers.
+      </p>
+    </div>
+    <div class="aboutUs__content">
+      <div class="content__title">Our Standards and Practices</div>
+      <a href="#" class="content__link"> Read here </a>
+    </div>
+    <div class="aboutUs__content">
+      <div class="content__title">Our Impact</div>
+      <p class="content__paragraph">
+        <i>
+          Over the years, City Limits has exposed dozens of issues and elevated
+          hundreds of voices. Here are just a few examples of areas where we’ve
+          made a difference:
+        </i>
+      </p>
+      <div class="content__paragraph">
+        •We were the first news organization to comprehensively investigate the
+        flaws in New York’s use of financial bail, and our reporting informed
+        work by human-rights organizations that in turn spurred action by the
+        state court system.
+      </div>
+      <div class="content__paragraph">
+        •Our reporting on the mayor’s affordable housing plan and the concerns
+        about low-income renters and non-profit builders being excluded prodded
+        the discussion that led to changes in the city’s approach in 2016.
+      </div>
+      <div class="content__paragraph">
+        •Our 2010 investigation of one of the convictions related to the Brian
+        Watkins murder led to that defendant, Johnny Hincapie, being released
+        from prison after 25 years after his case was reopened.
+      </div>
+      <a href="" class="content__link"> Read more about City Limits’ impact </a>
+    </div>
+
+    <div class="aboutUs__content">
+      <div class="content__title">Our Staff</div>
+      <!-- Content Chunk 1 -->
+      <div class="content__chunk">
+        <h3 class="name">Bianca Clendenin</h3>
+        <div class="post">Audience Development Editor</div>
+        <div class="links">
+          <a href="#" class="content__link">Bio/Bylines</a>
+          <a href="#" class="content__link">Twitter</a>
+          <a href="#" class="content__link">Email</a>
+        </div>
+      </div>
+      <!-- Content Chunk 1 -->
+      <div class="content__chunk">
+        <h3 class="name">Bianca Clendenin</h3>
+        <div class="post">Audience Development Editor</div>
+        <div class="links">
+          <a href="#" class="content__link">Bio/Bylines</a>
+          <a href="#" class="content__link">Twitter</a>
+          <a href="#" class="content__link">Email</a>
+        </div>
+      </div>
+      <!-- Content Chunk 1 -->
+      <div class="content__chunk">
+        <h3 class="name">Bianca Clendenin</h3>
+        <div class="post">Audience Development Editor</div>
+        <div class="links">
+          <a href="#" class="content__link">Bio/Bylines</a>
+          <a href="#" class="content__link">Twitter</a>
+          <a href="#" class="content__link">Email</a>
+        </div>
+      </div>
+      <!-- Content Chunk 2 -->
+      <div class="content__chunk">
+        <h3 class="name">Jeanmarie Evelly</h3>
+        <div class="post">Deputy Editor/Youth Program Manager</div>
+        <div class="links">
+          <a href="#" class="content__link">Bio/Bylines</a>
+          <a href="#" class="content__link">Twitter</a>
+          <a href="#" class="content__link">Email</a>
+          <a href="#" class="content__link">Linkedin</a>
+        </div>
+      </div>
+      <!-- Content Chunk 3 -->
+      <div class="content__chunk">
+        <h3 class="name">Nicole Javorsky</h3>
+        <div class="post">Staff Writer</div>
+        <div class="links">
+          <a href="#" class="content__link">Bio/Bylines</a>
+          <a href="#" class="content__link">Twitter</a>
+          <a href="#" class="content__link">Email</a>
+        </div>
+      </div>
+      <!-- Content Chunk 4 -->
+      <div class="content__chunk">
+        <h3 class="name">Marjorie Martay</h3>
+        <div class="post">Executive Diretor</div>
+        <div class="links">
+          <a href="#" class="content__link">Bio/Bylines</a>
+          <a href="#" class="content__link">Email</a>
+        </div>
+      </div>
+      <!-- Content Chunk 5 -->
+      <div class="content__chunk">
+        <h3 class="name">Jarrett Murphy</h3>
+        <div class="post">Executive Editor</div>
+        <div class="links">
+          <a href="#" class="content__link">Bio/Bylines</a>
+          <a href="#" class="content__link">Twitter</a>
+          <a href="#" class="content__link">Email</a>
+        </div>
+      </div>
+      <!-- Content Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">Daniel Parra</h3>
+        <div class="post">Spanish-Language Reporter/Editor</div>
+        <div class="links">
+          <a href="#" class="content__link">Bio/Bylines</a>
+          <a href="#" class="content__link">Twitter</a>
+          <a href="#" class="content__link">Email</a>
+        </div>
+      </div>
+      <!-- Content Chunk 7 -->
+      <div class="content__chunk">
+        <h3 class="name">Adi Talwar</h3>
+        <div class="post">Contributing Photographer</div>
+        <div class="links">
+          <a href="#" class="content__link">Website</a>
+          <a href="#" class="content__link">Twitter</a>
+          <a href="#" class="content__link">Email</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutUs__content">
+      <div class="content__title">Out Board</div>
+
+      <!-- Chunk 1 -->
+      <div class="content__chunk">
+        <h3 class="name">Mark Edmiston, chairman</h3>
+        <div class="post"><i>Managing Partner, Civil Management LLC</i></div>
+      </div>
+      <!-- Chunk 2 -->
+      <div class="content__chunk">
+        <h3 class="name">Andrew Breslau, vice chairman</h3>
+        <div class="post">
+          <i
+            >Senior Vice President for Communications and Marketing, Downtown
+            Alliance</i
+          >
+        </div>
+      </div>
+      <!-- Chunk 3 -->
+      <div class="content__chunk">
+        <h3 class="name">Mark Edmiston, chairman</h3>
+        <div class="post"><i>Managing Partner, Civil Management LLC</i></div>
+      </div>
+      <!-- Chunk 4 -->
+      <div class="content__chunk">
+        <h3 class="name">Mark Coatney</h3>
+        <div class="post"><i>Vice President of Digital News, Forbes</i></div>
+      </div>
+      <!-- Chunk 5 -->
+      <div class="content__chunk">
+        <h3 class="name">Erica Gonzalez</h3>
+        <div class="post"><i>Deputy Director, Power4PuertoRico</i></div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">David R. Jones</h3>
+        <div class="post"><i>President, Community Service Society</i></div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">Mark E. Lieberman</h3>
+        <div class="post">
+          <i
+            >Director of Research, Carpenter Contractor Alliance of Metropolitan
+            New York.</i
+          >
+        </div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">David R. Jones</h3>
+        <div class="post"><i>President, Community Service Society</i></div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">Jeff Maclin</h3>
+        <div class="post">
+          <i
+            >Vice President for Governmental and Public Relations, Community
+            Service Society</i
+          >
+        </div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">Martha Nelson</h3>
+        <div class="post">
+          <i
+            >Former SVP and Editor-in-Chief of Yahoo! and former Editor-in-Chief
+            of Time Inc.</i
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutUs__content">
+      <div class="content__title">Our Associate Board</div>
+      <!-- Chunk 1 -->
+      <div class="content__chunk">
+        <h3 class="name">Mark Edmiston, chairman</h3>
+        <div class="post"><i>Managing Partner, Civil Management LLC</i></div>
+      </div>
+      <!-- Chunk 2 -->
+      <div class="content__chunk">
+        <h3 class="name">Andrew Breslau, vice chairman</h3>
+        <div class="post">
+          <i
+            >Senior Vice President for Communications and Marketing, Downtown
+            Alliance</i
+          >
+        </div>
+      </div>
+      <!-- Chunk 3 -->
+      <div class="content__chunk">
+        <h3 class="name">Mark Edmiston, chairman</h3>
+        <div class="post"><i>Managing Partner, Civil Management LLC</i></div>
+      </div>
+      <!-- Chunk 4 -->
+      <div class="content__chunk">
+        <h3 class="name">Mark Coatney</h3>
+        <div class="post"><i>Vice President of Digital News, Forbes</i></div>
+      </div>
+      <!-- Chunk 5 -->
+      <div class="content__chunk">
+        <h3 class="name">Erica Gonzalez</h3>
+        <div class="post"><i>Deputy Director, Power4PuertoRico</i></div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">David R. Jones</h3>
+        <div class="post"><i>President, Community Service Society</i></div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">Mark E. Lieberman</h3>
+        <div class="post">
+          <i
+            >Director of Research, Carpenter Contractor Alliance of Metropolitan
+            New York.</i
+          >
+        </div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">David R. Jones</h3>
+        <div class="post"><i>President, Community Service Society</i></div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">Jeff Maclin</h3>
+        <div class="post">
+          <i
+            >Vice President for Governmental and Public Relations, Community
+            Service Society</i
+          >
+        </div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__chunk">
+        <h3 class="name">Martha Nelson</h3>
+        <div class="post">
+          <i
+            >Former SVP and Editor-in-Chief of Yahoo! and former Editor-in-Chief
+            of Time Inc.</i
+          >
+        </div>
+      </div>
+
+      <h3 class="content__subTitle">Join Our Associate Board</h3>
+      <div class="content__paragraph">
+        City Limits offers a limited number of Associate Board positions for New
+        York City residents under 30 years old who are interested in being
+        ambassadors for independent, investigative, local journalism by raising
+        funds, and by bringing expertise that supports and expands our mission.
+        Applications are currently being accepted
+
+        <a href="" class="content__link">here</a> .
+      </div>
+    </div>
+<!-- Awards -->
+    <div class="aboutUs__content">
+      <div class="content__title">Our Awards</div>
+      <!-- Chunk 1 -->
+      <div class="content__paragraph">
+        <div><i>2019 Clarion Awards</i> </div>
+        <div>Online Journalism: Special Feature Section</div>
+      </div>
+      <!-- Chunk 2 -->
+      <div class="content__paragraph">
+        <div><i>2018 Ippies</i> </div>
+        <div>–1st place, Best Story About a Community (Abigail Savitch-Lew for “13 Years After Blocking New Development, Staten
+        Island Hopes to Welcome Just Enough of It”)
+        –3rd place, Best Photograph (Adi Talwar for “NoBackspace: Vision Zero Works When Victim-Blaming Stops and Accountability
+        Starts”)
+        –3rd place, Best Social Issues Story (David Brand for “NYC’s Cultural Plan Spurs Disabled Artists in Fight for Roles and
+        Respect”)</div>
+      </div>
+      <!-- Chunk 3 -->
+      <div class="content__paragraph">
+        <div><i>2019 Clarion Awards</i> </div>
+        <div>Online Journalism: Special Feature Section</div>
+      </div>
+      <!-- Chunk 4 -->
+      <div class="content__paragraph">
+        <div><i>2018 Ippies</i> </div>
+        <div>Online Journalism: Special Feature Section</div>
+      </div>
+      <!-- Chunk 5 -->
+      <div class="content__paragraph">
+        <div><i>2018 New York Press Club Journalism Awards</i> </div>
+        <div>Best Feature-Internet: “NYCHA Crime Witnesses Face Obstacles When They Seek Safety” by Ese Olumhense (produced in
+        partnership with The Investigative Fund)
+        Best Political Coverage-Internet: “Election 2017” by editor Jarett Murphy, photographer Adi Talwar, then-staff writer
+        Abigail Savitch-Lew and contributors Kizzy Cox, Jonathan Gomez and Elizabeth Michaelson Monaghan.</div>
+      </div>
+      <!-- Chunk 6 -->
+      <div class="content__paragraph">
+        <div><i>2018 Silurian Medals</i> </div>
+        <div>Science/Health: “Death Disparities” by Ruth Ford with Jananki Chadha and photographer Adi Talwar</div>
+      </div>
+      <!-- Chunk 7 -->
+      <div class="content__paragraph">
+        <div><i>2017 Ippies</i> </div>
+        <div>Best Multimedia Package: First Place, “Cleaner Creeks and Bays, But How Will New Yorkers Access the Waters They Own?” by
+        Adi Talwar and Guglielmo Mattioli</div>
+      </div>
+      <!-- Chunk 8 -->
+      <div class="content__paragraph">
+        <div><i>2019 Clarion Awards</i> </div>
+        <div>Best Social Issues Story: Second Place, “Do NYC’s Middle-Class Families Really Need Affordable Housing?” by Abigail
+        Savitch-Lew</div>
+      </div>
+      <!-- Chunk 9 -->
+      <div class="content__paragraph">
+        <div><i>2017 Ippies</i> </div>
+        <div>Best Social Issues Story: Second Place, “Do NYC’s Middle-Class Families Really Need Affordable Housing?” by Abigail
+        Savitch-Lew</div>
+      </div>
+      <!-- Chunk 10 -->
+      <div class="content__paragraph">
+        <div><i>22016 Clarion Award</i> </div>
+        <div>Online Journalism-Special Feature Section: On the Border of Justice</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    
+    <div class="footer container-fluid m-auto p-5">
+      <div class="footer__top row">
+        <div class="footer__content col-lg-5 mb-5">
+          <h5 class="footer__heading w-75">
+            City Limits uses investigative journalism through the prism of New
+            York City to identify urban problems, examine their causes, explore
+            solutions, and equip communities to take action.
+          </h5>
+          <p class="footer__paragraph w-75">
+            Founded in 1976 in the midst of New York’s fiscal crisis, City
+            Limits exists to inform democracy and equip citizens to create a
+            more just city. The organization is a 501(c)(3) nonprofit funded by
+            foundation support, ad sponsorship and donations from readers.
+          </p>
+        </div>
+        <div class="footer__links col-lg-7 row">
+          <ul class="footer__links1 col-lg-6">
+            <li><i class="fas fa-play"></i><a href="#">About Us</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Donate</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Impact</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Supporters</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Supporters</a></li>
+          </ul>
+          <ul class="footer__links2 col-lg-6">
+            <li><i class="fas fa-play"></i><a href="#">Advertise</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Become A Member</a></li>
+            <li>
+              <i class="fas fa-play"></i><a href="#">Content Sharing Policy</a>
+            </li>
+            <li><i class="fas fa-play"></i><a href="#">Privacy Policy</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Standards</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer__bottom row">
+        <div class="footer__copyright col-md-8">
+          © Copyright 2020, City Limits
+        </div>
+        <div class="footer__socialMedias col-md-4 mt-3 mt-md-0">
+          <ul class="footer__socialLinks row">
+            <li class="col-2">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>
