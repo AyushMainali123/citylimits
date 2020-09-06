@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="header__form">
+        <input type="text" placeholder="Search" />
+        <!-- Search Icon -->
+        <svg
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          class="bi bi-search"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"
+          />
+        </svg>
+      </div>
+      <div class="header__logo">
+        <img
+          src="https://citylimits.org/wp-content/uploads/2014/10/city-limits-color-srgb-336x78.png"
+          alt="Logo"
+        />
+      </div>
+      <div class="header__buttons">
+        <button class="header__newsLetterBtn">NewsLetter</button>
+        <button class="header__donateBtn">Donate</button>
+      </div>
+    </div>
+
+    <div class="underline"></div>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navbar__top">
+        <ul>
+          <li><a href="#">Topics</a></li>
+          <li><a href="#">The Coronavirus Crisis</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Become A Member</a></li>
+          <li><a href="#">Get Involved</a></li>
+        </ul>
+      </div>
+      <div class="navbar__bottom">
+        <ul>
+          <li>
+            <a href="#">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/mapping-the-future-140x140.jpg"
+                alt=""
+              />
+              <span>Mapping The Future</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/citylimits-en-espanol-140x140.jpg"
+                alt=""
+              />
+              <span>Una Ciudad sin Límites</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/voices-of-NY-140x140.jpg"
+              />
+              <span>Voices Of New York</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/12/clarify-140x140.jpg"
+                alt=""
+              />
+              <span>CLARIFY Training Program</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="navbar__mobile container-fluid row d-none">
+      <div class="navbar__mobileOptions" data-mobileOptions>
+        <div class="navbar__cross" data-cross>
+          <i class="far fa-times-circle"></i>
+        </div>
+        <ul>
+          <li>
+            <input type="text" placeholder="Search" />
+          </li>
+          <li><a href="">News</a></li>
+          <li><a href="">Investigation</a></li>
+          <li><a href="">Age Justice</a></li>
+          <li><a href="">Climate Change</a></li>
+          <li><a href="">The Ride</a></li>
+          <li><a href="">Opinion</a></li>
+          <li><a href="">Podcasts</a></li>
+          <li><a href="">Elections</a></li>
+          <!--  -->
+          <li><a href="">The Coronavirus Crisis</a></li>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Opinion</a></li>
+          <!--  -->
+        </ul>
+      </div>
+      <div class="navbar__menu" data-menu>
+        <a href="#">
+          <div>
+            <i class="fas fa-bars menu"></i>
+            <div class="text">Menu</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <section class="banner container my-5 py-5 border-bottom">
+      <div class="row flex-column-reverse flex-xl-row mb-5">
+        <div
+          class="col-xl-6 d-xl-flex justify-content-end flex-column mt-5 mt-xl-0"
+        >
+          <div class="type text-uppercase font-weight-bold">
+            special project
+          </div>
+          <h2 class="title display-4 font-weight-normal w-75">
+            Voices of New York
+          </h2>
+          <p class="lead font-weight-normal text-secondary w-75">
+            Amplifying the city’s ethnic and community press. Reporting that
+            reflects New York’s diversity.
+          </p>
+        </div>
+        <div class="col-xl-6">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2019/09/voices-of-ny-1.jpg"
+            alt=""
+            class="img-fluid m-auto w-100"
+          />
+        </div>
+      </div>
+      <div class="description pt-5">
+        <h4 class="lead font-weight-bold">
+          Voices of New York amplifies the city’s ethnic and community press.
+          Launched shortly after 9/11, it aims to break down the barriers of
+          language and geography that separate New York’s communities, celebrate
+          quality journalism in every neighborhood, and harness the combined
+          power of grassroots journalists across the city.
+        </h4>
+        <h4 class="font-weight-normal my-5 text-secondary">
+          This service was operated from 2011 to 2019 by the Center for
+          Community and Ethnic Media at CUNY’s Craig Newmark Graduate School of
+          Journalism.
+        </h4>
+      </div>
+    </section>
+
+    <!-- Recent Articles -->
+    <section class="recentArticles container pb-5 border-bottom">
+      <div class="title text-uppercase font-weight-bold my-3">
+        Recent Articles
+      </div>
+      <div class="row">
+        <!-- Image -->
+        <div class="image col-xl-6">
+          <img
+            src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/09/mccray-771x513.jpg"
+            alt=""
+            class="img-fluid"
+          />
+          <h3 class="mt-2 mb-3 font-weight-bold pb-3">
+            First Lady Apologizes for MWBE Language Excluding Asians
+          </h3>
+          <h5 class="font-weight-normal text-secondary mb-5">
+            Public pronouncements about effort to expand MWBE assistance didn't
+            mention the 1.2 million-member population group.
+          </h5>
+        </div>
+        <!-- Contents -->
+        <div class="col-xl-6 row">
+          <div class="content col-xl-6 mb-5 mb-xl-0">
+            <h4 class="content__title font-weight-bold">
+              Preparing for the New School Year, in Polish
+            </h4>
+          </div>
+          <div class="content col-xl-6 mb-5 mb-xl-0">
+            <h4 class="content__title font-weight-bold">
+              Preparing for the New School Year, in Polish
+            </h4>
+          </div>
+          <div class="content mb-5 col-xl-6 mb-xl-0">
+            <h4 class="content__title font-weight-bold">
+              Preparing for the New School Year, in Polish
+            </h4>
+          </div>
+          <div class="content col-xl-6 mb-5 mb-xl-0">
+            <h4 class="content__title font-weight-bold">
+              Preparing for the New School Year, in Polish
+            </h4>
+          </div>
+          <div class="content col-xl-6 mb-5 mb-xl-0">
+            <h4 class="content__title font-weight-bold">
+              Preparing for the New School Year, in Polish
+            </h4>
+          </div>
+          <div class="content col-xl-6">
+            <h4 class="content__title font-weight-bold">
+              Preparing for the New School Year, in Polish
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advertisement -->
+    <section class="ad"></section>
+
+    <!-- Full Width Recent Articles -->
+    <div class="container-fluid recentArticlesFull">
+      <h3 class="text-center text-uppercase mt-2 mb-5">Recent Articles</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 pr-4 border-right">
+            <div class="pb-5 border-bottom">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/08/Chinatown-resto-771x578.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <h2 class="mt-1 mb-4">
+                Longtime Chinatown Restaurants Close for Good Amid Pandemic
+              </h2>
+              <div class="lead font-weight-normal pl-0 pb-5">
+                Eateries like Golden Mandarin Court, Amazing 66 and Hope Shing
+                are shuttering after months of quarantine restrictions and
+                decreased tourism. 'It’s been four months now. It’s not getting
+                any better,' one owner said.
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 pr-4">
+            <div class="pb-5 border-bottom">
+              <img
+                src="https://0d4g9qvxfl-flywheel.netdna-ssl.com/wp-content/uploads/2020/08/Chinatown-resto-771x578.jpg"
+                alt=""
+                class="img-fluid"
+              />
+              <h2 class="mt-1 mb-4">
+                Longtime Chinatown Restaurants Close for Good Amid Pandemic
+              </h2>
+              <div class="lead font-weight-normal pl-0 pb-5">
+                Eateries like Golden Mandarin Court, Amazing 66 and Hope Shing
+                are shuttering after months of quarantine restrictions and
+                decreased tourism. 'It’s been four months now. It’s not getting
+                any better,' one owner said.
+              </div>
+            </div>
+          </div>
+          <h3 class="col-xl-6 py-5 border-bottom border-right my-3">
+            Families Rally to Keep School’s Polish Dual-Language Program
+          </h3>
+          <h3 class="col-xl-6 py-5 border-bottom border-right my-3">
+            Families Rally to Keep School’s Polish Dual-Language Program
+          </h3>
+          <h3 class="col-xl-6 py-5 border-bottom border-right my-3">
+            Families Rally to Keep School’s Polish Dual-Language Program
+          </h3>
+          <h3 class="col-xl-6 py-5 border-bottom border-right my-3">
+            Families Rally to Keep School’s Polish Dual-Language Program
+          </h3>
+          <h3 class="col-xl-6 py-5 border-bottom border-right my-3">
+            Families Rally to Keep School’s Polish Dual-Language Program
+          </h3>
+          <h3 class="col-xl-6 py-5 border-bottom border-right my-3">
+            Families Rally to Keep School’s Polish Dual-Language Program
+          </h3>
+          <button
+            class="col-xl-6 offset-xl-3 text-uppercase my-4 btn-danger p-3"
+          >
+            Load More Articles
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advertisement -->
+    <section class="ad"></section>
+
+    <!-- Links -->
+    <div class="container links my-5">
+      <h3 class="links__title text-uppercase">
+        NYC’S ETHNIC AND COMMUNITY PRESS OUTLETS
+      </h3>
+      <h4 class="link font-weight-normal">24 Horas</h4>
+      <h4 class="link font-weight-normal">Al Hawadeth</h4>
+      <h4 class="link font-weight-normal">Allewa Alarabi</h4>
+      <h4 class="link font-weight-normal">America Oggi</h4>
+      <h4 class="link font-weight-normal">Amsterdam News</h4>
+      <h4 class="link font-weight-normal">Asian Journal</h4>
+      <h4 class="link font-weight-normal">Astoria Post</h4>
+      <h4 class="link font-weight-normal">Bialy Orzel</h4>
+      <h4 class="link font-weight-normal">Bklyner</h4>
+      <h4 class="link font-weight-normal">Black Star News</h4>
+      <h4 class="link font-weight-normal">Bowery Boogie</h4>
+      <h4 class="link font-weight-normal">Brazilian Press</h4>
+      <h4 class="link font-weight-normal">Brazilian Times</h4>
+      <h4 class="link font-weight-normal">Brazilian Voice</h4>
+      <h4 class="link font-weight-normal">Brighton Beach News</h4>
+      <h4 class="link font-weight-normal">Bronx Times</h4>
+      <h4 class="link font-weight-normal">Bronx Voice</h4>
+      <h4 class="link font-weight-normal">Brooklyn Based</h4>
+      <h4 class="link font-weight-normal">Brooklyn Daily Eagle</h4>
+      <h4 class="link font-weight-normal">Brooklyn Deep</h4>
+      <h4 class="link font-weight-normal">Brooklyn Paper</h4>
+      <h4 class="link font-weight-normal">Brooklyn Reporter</h4>
+      <h4 class="link font-weight-normal">24 Horas</h4>
+      <h4 class="link font-weight-normal">Al Hawadeth</h4>
+      <h4 class="link font-weight-normal">Allewa Alarabi</h4>
+      <h4 class="link font-weight-normal">America Oggi</h4>
+      <h4 class="link font-weight-normal">Amsterdam News</h4>
+      <h4 class="link font-weight-normal">Asian Journal</h4>
+      <h4 class="link font-weight-normal">Astoria Post</h4>
+      <h4 class="link font-weight-normal">Bialy Orzel</h4>
+      <h4 class="link font-weight-normal">Bklyner</h4>
+      <h4 class="link font-weight-normal">Black Star News</h4>
+      <h4 class="link font-weight-normal">Bowery Boogie</h4>
+      <h4 class="link font-weight-normal">Brazilian Press</h4>
+      <h4 class="link font-weight-normal">Brazilian Times</h4>
+      <h4 class="link font-weight-normal">Brazilian Voice</h4>
+      <h4 class="link font-weight-normal">Brighton Beach News</h4>
+      <h4 class="link font-weight-normal">Bronx Times</h4>
+      <h4 class="link font-weight-normal">Bronx Voice</h4>
+      <h4 class="link font-weight-normal">Brooklyn Based</h4>
+      <h4 class="link font-weight-normal">Brooklyn Daily Eagle</h4>
+      <h4 class="link font-weight-normal">Brooklyn Deep</h4>
+      <h4 class="link font-weight-normal">Brooklyn Paper</h4>
+      <h4 class="link font-weight-normal">Brooklyn Reporter</h4>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer container-fluid m-auto p-5">
+      <div class="footer__top row">
+        <div class="footer__content col-lg-5 mb-5">
+          <h5 class="footer__heading w-75">
+            City Limits uses investigative journalism through the prism of New
+            York City to identify urban problems, examine their causes, explore
+            solutions, and equip communities to take action.
+          </h5>
+          <p class="footer__paragraph w-75">
+            Founded in 1976 in the midst of New York’s fiscal crisis, City
+            Limits exists to inform democracy and equip citizens to create a
+            more just city. The organization is a 501(c)(3) nonprofit funded by
+            foundation support, ad sponsorship and donations from readers.
+          </p>
+        </div>
+        <div class="footer__links col-lg-7 row">
+          <ul class="footer__links1 col-lg-6">
+            <li><i class="fas fa-play"></i><a href="#">About Us</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Donate</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Impact</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Supporters</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Supporters</a></li>
+          </ul>
+          <ul class="footer__links2 col-lg-6">
+            <li><i class="fas fa-play"></i><a href="#">Advertise</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Become A Member</a></li>
+            <li>
+              <i class="fas fa-play"></i><a href="#">Content Sharing Policy</a>
+            </li>
+            <li><i class="fas fa-play"></i><a href="#">Privacy Policy</a></li>
+            <li><i class="fas fa-play"></i><a href="#">Our Standards</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer__bottom row">
+        <div class="footer__copyright col-md-8">
+          © Copyright 2020, City Limits
+        </div>
+        <div class="footer__socialMedias col-md-4 mt-3 mt-md-0">
+          <ul class="footer__socialLinks row">
+            <li class="col-2">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li class="col-2">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>
